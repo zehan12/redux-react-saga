@@ -1,6 +1,7 @@
 import { FC, Fragment } from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Index from "../page/Index";
+import Home from "../page/home";
 
 const routes = [
     {
@@ -8,7 +9,7 @@ const routes = [
          *
          *  here are the initial routes that we'll need in our system.
          *  1. path "/" user educaton display index
-         *
+         *      a) navigate to  
          */
         path: "/", // show path for routing
         element: "", // show component for particular path
@@ -18,6 +19,10 @@ const routes = [
                 path: "/",
                 element: <Index />,
             },
+            {
+                path: "/home",
+                element: <Home />
+            }
         ],
     }
 ];
