@@ -32,3 +32,47 @@
   align-items: center;
   min-height: 100%;
 }
+
+
+.hacking-animation {
+  background: #000;
+  height: 100%;
+  position: relative;
+}
+
+.hacking-animation__text {
+  bottom: 0;
+  font-family: monospace;
+  font-size: 18px;
+  left: 0;
+  line-height: 1.5rem;
+  padding: 2rem;
+  position: absolute;
+  right: 0;
+}
+
+.hacking-animation__character {
+  animation: type 500ms linear;
+  color: white;
+}
+
+@keyframes type {
+  /* 0% {
+    background: #FFF;
+    color: #FFF;
+  } */
+
+  5% {
+    background: red;
+    color: white;
+  }
+
+  95% {
+    color: wheat;
+  }
+
+  /* 100% {
+    background: transparent;
+    color: #00a000;
+  } */
+}
